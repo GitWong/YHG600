@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#8866ff00"
+        android:gravity="center"
+        android:text="统计结果"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/et_use"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:singleLine="true"
+        android:background="#662F4F4F"
+        android:hint="完成数量" />
+
+    <EditText
+        android:id="@+id/et_unuse"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:singleLine="true"
+        android:background="#662F4F4F"
+        android:hint="未完成数量" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_ok"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/title_button"
+            android:text="确定" />
+
+    </LinearLayout>
+
+</LinearLayout>

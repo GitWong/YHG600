@@ -1,0 +1,19 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="rectWidth">40px</dimen> //截取框 宽度
+    <dimen name="rectHight">35px</dimen>//截取框 高度
+
+    <dimen name="testWidth">10px</dimen> //模板 宽度
+    <dimen name="testHight">25px</dimen>//模板 高度
+
+
+
+
+
+
+
+</resources>

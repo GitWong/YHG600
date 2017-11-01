@@ -1,0 +1,96 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+apply plugin: 'com.neenbedankt.android-apt'
+//apply plugin: 'com.android.model.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'wang'
+            keyPassword 'galaxy'
+            storeFile file('C:/Users/Dell/key/android.jks')
+            storePassword 'galaxy'
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion '23.0.2'
+
+    /*sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }*/
+    packagingOptions
+            {
+                exclude 'META-INF/DEPENDENCIES'
+                exclude 'META-INF/NOTICE'
+                exclude 'META-INF/LICENSE'
+                exclude 'META-INF/LICENSE.txt'
+                exclude 'META-INF/NOTICE.txt'
+            }
+    defaultConfig {
+        applicationId "com.galaxy.safe"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 15
+        versionName "1.4 测试版"
+        multiDexEnabled true
+
+        ndk {
+            moduleName "print"
+            ldLibs "log", "z", "m"
+            abiFilters "armeabi", "armeabi-v7a", "x86"
+        }
+        signingConfig signingConfigs.config
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+    useLibrary 'org.apache.http.legacy'
+    sourceSets { main { assets.srcDirs = ['src/main/assets', 'src/main/assets/'] } }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    productFlavors {
+    }
+}
+
+
+
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+    //    provided fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile project(':openCVLibrary2410')
+    compile files('libs/xUtils-2.6.14.jar')
+    compile files('libs/poi-3.8.jar')
+    compile project(':sliding_menu')
+    compile 'com.nineoldandroids:library:2.4.0'
+    //    provided files('libs/nineoldandroids-2.4.0.jar')
+    compile 'com.github.lecho:hellocharts-library:1.5.8@aar'
+    compile files('libs/locSDK_6.13.jar')
+    compile files('libs/baidumapapi_map_v4_0_0.jar')
+    compile files('libs/baidumapapi_base_v4_0_0.jar')
+    compile files('libs/gson-2.2.1.jar')
+    compile 'com.android.support:multidex:1.0.0'
+    compile project(':libzxing')
+    compile 'com.jakewharton:butterknife:8.2.1'
+    apt 'com.jakewharton:butterknife-compiler:8.2.1'
+    compile 'com.mylhyl:superDialog:1.0.11'
+    /* debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5'
+         releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+         testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'*/
+}

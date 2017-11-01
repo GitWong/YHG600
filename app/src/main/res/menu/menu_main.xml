@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/map"
+        android:icon="@drawable/map"
+        android:orderInCategory="90"
+        android:title="附近设备"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/window"
+        android:icon="@drawable/open"
+        android:orderInCategory="90"
+        android:title="额外功能"
+        app:showAsAction="ifRoom" />
+
+  <!--  <item
+        android:id="@+id/setting"
+        android:icon="@drawable/setting"
+        android:orderInCategory="90"
+        android:title="系统设置"
+        app:showAsAction="ifRoom" />-->
+</menu>

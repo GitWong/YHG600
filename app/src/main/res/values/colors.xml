@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2F4F4F</color>
+    <color name="colorPrimaryDark">#882F4F4F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="overflowTextColor">#9e9e9e</color>
+    <color name="green">#3CB371</color>
+    <color name="red">#FF4500</color>
+    <color name="black">#000000</color>
+    <color name="big_n">#33ffffff</color>
+    <color name="big_p">#003519</color>
+    <color name="white">#ffffff</color>
+    <color name="bluen">#18B4ED</color>
+    <color name="bluep">#9918B4ED</color>
+    <color name="whiten">#99ffffff</color>
+    <color name="whitep">#bbffffff</color>
+    <color  name="left">#770033FF</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+</resources>

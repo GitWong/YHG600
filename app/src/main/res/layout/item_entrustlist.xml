@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="42dp"
+    android:layout_marginBottom="6dp"
+    android:layout_marginTop="6dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="4dp"
+        android:layout_weight="0.8"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="姓名"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_nature"
+        android:layout_width="0dp"
+        android:gravity="center_vertical"
+        android:layout_height="42dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.9"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="角色"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_company"
+        android:layout_width="0dp"
+        android:gravity="center_vertical"
+        android:layout_height="42dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.7"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="所属公司"
+        android:textSize="14sp" />
+
+
+</LinearLayout>

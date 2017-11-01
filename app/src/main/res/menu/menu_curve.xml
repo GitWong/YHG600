@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+
+    <item
+        android:id="@+id/add_point"
+        android:icon="@drawable/open"
+        android:orderInCategory="100"
+        android:title="增加点"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/info"
+        android:icon="@drawable/erweima"
+        android:orderInCategory="100"
+        android:title="生成二维码"
+        app:showAsAction="ifRoom" />
+
+</menu>

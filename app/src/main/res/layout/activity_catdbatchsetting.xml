@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/xbg"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="6dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" *卡批次号 ："
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_card_batch"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:background="@drawable/qq_edit_login"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="3dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="     保质期   ："
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_safe_time"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:background="@drawable/qq_edit_login"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="6dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="     卡类型   ："
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="4dp">
+
+                    <EditText
+                        android:id="@+id/et_card_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/qq_edit_login"
+                        android:focusable="false"
+                        android:singleLine="true"
+                        android:textColor="#000000" />
+
+                    <ImageView
+                        android:id="@+id/iv_card_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="190dp"
+                        android:src="@drawable/plus" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="6dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="     供应商   ："
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="4dp">
+
+                    <EditText
+                        android:id="@+id/et_offer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/qq_edit_login"
+                        android:focusable="false"
+                        android:singleLine="true"
+                        android:textColor="#000000" />
+
+                    <ImageView
+                        android:id="@+id/iv_offer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="190dp"
+                        android:src="@drawable/plus" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="6dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  生产日期："
+                    android:textSize="20sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="4dp">
+
+                    <EditText
+                        android:id="@+id/et_data"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/qq_edit_login"
+                        android:focusable="false"
+                        android:singleLine="true"
+                        android:textColor="#000000" />
+
+                    <ImageView
+                        android:id="@+id/iv_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="190dp"
+                        android:src="@drawable/plus" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="6dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="     卡数量 ："
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/et_card_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/qq_edit_login"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="6dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 使用数量 ："
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/et_use_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:background="@drawable/qq_edit_login"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+            </LinearLayout>
+            <!--  <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="40dp"
+                  android:layout_marginTop="6dp"
+                  android:focusable="true"
+                  android:focusableInTouchMode="true"
+                  android:orientation="horizontal">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="检测项目1："
+                      android:textSize="20sp" />
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_marginRight="4dp">
+
+                      <EditText
+                          android:id="@+id/et_item1"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:background="#ffffff"
+                          android:focusable="false"
+                          android:singleLine="true"
+                          android:textColor="#000000" />
+
+                      <ImageView
+                          android:id="@+id/iv_item1"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_alignParentRight="true"
+                          android:paddingLeft="190dp"
+                          android:layout_centerVertical="true"
+                          android:src="@drawable/plus" />
+                  </RelativeLayout>
+
+              </LinearLayout> <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="40dp"
+                  android:layout_marginTop="6dp"
+                  android:focusable="true"
+                  android:focusableInTouchMode="true"
+                  android:orientation="horizontal">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="检测项目2："
+                      android:textSize="20sp" />
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_marginRight="4dp">
+
+                      <EditText
+                          android:id="@+id/et_item2"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:background="#ffffff"
+                          android:focusable="false"
+                          android:singleLine="true"
+                          android:textColor="#000000" />
+
+                      <ImageView
+                          android:id="@+id/iv_item2"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_alignParentRight="true"
+                          android:paddingLeft="190dp"
+                          android:layout_centerVertical="true"
+                          android:src="@drawable/plus" />
+                  </RelativeLayout>
+
+              </LinearLayout>
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="40dp"
+                  android:layout_marginTop="6dp"
+                  android:focusable="true"
+                  android:focusableInTouchMode="true"
+                  android:orientation="horizontal">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="检测项目3："
+                      android:textSize="20sp" />
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_marginRight="4dp">
+
+                      <EditText
+                          android:id="@+id/et_item3"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:background="#ffffff"
+                          android:focusable="false"
+                          android:singleLine="true"
+                          android:textColor="#000000" />
+
+                      <ImageView
+                          android:id="@+id/iv_item3"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_alignParentRight="true"
+                          android:layout_centerVertical="true"
+                          android:paddingLeft="190dp"
+                          android:src="@drawable/plus" />
+                  </RelativeLayout>
+
+              </LinearLayout>
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="40dp"
+                  android:layout_marginTop="6dp"
+                  android:focusable="true"
+                  android:focusableInTouchMode="true"
+                  android:orientation="horizontal">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="检测项目4："
+                      android:textSize="20sp" />
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_marginRight="4dp">
+
+                      <EditText
+                          android:id="@+id/et_item4"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:background="#ffffff"
+                          android:focusable="false"
+                          android:singleLine="true"
+                          android:textColor="#000000" />
+
+                      <ImageView
+                          android:id="@+id/iv_item4"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_alignParentRight="true"
+                          android:layout_centerVertical="true"
+                          android:paddingLeft="190dp"
+                          android:src="@drawable/plus" />
+                  </RelativeLayout>
+
+              </LinearLayout>
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="40dp"
+                  android:layout_marginTop="6dp"
+                  android:focusable="true"
+                  android:focusableInTouchMode="true"
+                  android:orientation="horizontal">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="检测项目5："
+                      android:textSize="20sp" />
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_marginRight="4dp">
+
+                      <EditText
+                          android:id="@+id/et_item5"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:background="#ffffff"
+                          android:focusable="false"
+                          android:singleLine="true"
+                          android:textColor="#000000" />
+
+                      <ImageView
+                          android:id="@+id/iv_item5"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_alignParentRight="true"
+                          android:paddingLeft="190dp"
+                          android:layout_centerVertical="true"
+                          android:src="@drawable/plus" />
+                  </RelativeLayout>
+
+              </LinearLayout>-->
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_save"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@drawable/title_button"
+        android:gravity="center"
+        android:text="保存卡批次信息" />
+</LinearLayout>

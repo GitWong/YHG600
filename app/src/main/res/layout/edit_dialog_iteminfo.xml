@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#8866ff00"
+        android:gravity="center"
+        android:text="设置信息"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:background="#662F4F4F"
+        android:singleLine="true"
+        android:hint="输入项目名称"
+        android:layout_height="40dp"
+         />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        >
+
+        <EditText
+            android:id="@+id/et_item_type"
+            android:hint="项目种类"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#662F4F4F"
+            android:focusable="false"
+            android:singleLine="true"
+             />
+
+        <ImageView
+            android:id="@+id/iv_item"
+            android:layout_width="wrap_content"
+            android:paddingLeft="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/plus" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_des"
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:background="#662F4F4F"
+        android:hint="项目描述"
+        android:layout_height="100dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bt_ok"
+            android:layout_width="0dip"
+            android:background="@drawable/title_button"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="确定" />
+
+        <Button
+            android:id="@+id/bt_cancel"
+            android:layout_width="0dip"
+            android:background="@drawable/title_button"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="取消" />
+    </LinearLayout>
+
+</LinearLayout>

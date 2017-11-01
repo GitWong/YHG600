@@ -1,0 +1,7 @@
+include ':app'
+include ':openCVLibrary2410'
+include ':sliding_menu'
+include ':libzxing'
+
+
+

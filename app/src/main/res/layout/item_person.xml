@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_marginTop="6dp"
+    android:layout_marginBottom="6dp"
+    android:layout_height="52dp" >
+    <TextView
+        android:layout_width="0dp"
+        android:text="姓名"
+        android:layout_marginLeft="4dp"
+        android:layout_weight="0.4"
+        android:id="@+id/tv_name"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:layout_gravity="center_vertical"
+        android:textSize="16sp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:id="@+id/tv_nature"
+        android:textSize="16sp"
+        android:singleLine="true"
+        android:text="角色"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="0.9"
+        android:id="@+id/tv_company"
+        android:textSize="16sp"
+        android:singleLine="true"
+        android:text="所属公司"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="0.2"
+        android:id="@+id/iv_delete"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/delete_selector"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

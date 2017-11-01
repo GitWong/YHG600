@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="66dp"
+    android:background="@drawable/cycleg"
+    android:padding="3dp">
+
+
+    <TextView
+        android:id="@+id/tv_taskname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@+id/lv_ntask"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="标题"
+        android:textColor="#438E82"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_taskno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_taskname"
+        android:layout_marginLeft="4dp"
+        android:text="消息内容"
+        android:textColor="#8D7A38"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_people"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_taskno"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="8dp"
+        android:text="下达人：文蔚大厦"
+        android:textColor="#77000000"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="4dp"
+        android:text="下达时间：2016年6月28日14:06:06"
+        android:textColor="#77000000"
+        android:textSize="10sp" />
+
+</RelativeLayout>
